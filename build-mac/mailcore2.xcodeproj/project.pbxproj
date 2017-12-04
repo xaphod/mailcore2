@@ -1503,6 +1503,7 @@
 		1820E7D41BD403ED00835D1E /* MCIMAPCustomCommandOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCIMAPCustomCommandOperation.h; sourceTree = "<group>"; };
 		1845356E1BE23FBD000B0D87 /* MCOIMAPCustomCommandOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOIMAPCustomCommandOperation.h; sourceTree = "<group>"; };
 		1845356F1BE23FBD000B0D87 /* MCOIMAPCustomCommandOperation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCOIMAPCustomCommandOperation.mm; sourceTree = "<group>"; };
+		22F71D901FD5DC9900ECD1D3 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../../../../../usr/local/Cellar/openssl/1.0.2m/lib/libssl.a; sourceTree = "<group>"; };
 		2744B1681A7A4637009E9E67 /* MCMXRecordResolverOperation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MCMXRecordResolverOperation.cpp; sourceTree = "<group>"; };
 		2744B1691A7A4637009E9E67 /* MCMXRecordResolverOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMXRecordResolverOperation.h; sourceTree = "<group>"; };
 		27478E7E1A764698004AE621 /* MCAccountValidator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MCAccountValidator.cpp; sourceTree = "<group>"; };
@@ -2883,6 +2884,7 @@
 		C64EA78E169F259200778456 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22F71D901FD5DC9900ECD1D3 /* libssl.a */,
 				C600B6221A244CC3000728F1 /* CFNetwork.framework */,
 				C6B5AE1119F63496001352A6 /* Foundation.framework */,
 				C6B5AE0F19F6347C001352A6 /* Security.framework */,
@@ -4520,6 +4522,10 @@
 				ENABLE_BITCODE = YES;
 				EXECUTABLE_PREFIX = lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/openssl/1.0.2m/lib,
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "MailCore-ios";
 				SDKROOT = iphoneos;
@@ -4535,6 +4541,10 @@
 				ENABLE_BITCODE = YES;
 				EXECUTABLE_PREFIX = lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/openssl/1.0.2m/lib,
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "MailCore-ios";
 				SDKROOT = iphoneos;
