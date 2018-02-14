@@ -83,6 +83,7 @@ void SMTPSendWithDataOperation::main()
         session()->session()->sendMessage(mMessageData, this, &error);
     }
     setError(error);
+    MC_SAFE_RELEASE(mMessageData);
 }
 
 void SMTPSendWithDataOperation::cancel()
